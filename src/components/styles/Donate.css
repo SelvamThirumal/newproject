@@ -1,0 +1,269 @@
+.donate input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 14px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ffffff, #f9f9f9);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* 🌈 Hover effect */
+.donate input:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(11, 92, 255, 0.15);
+  border-color: #7c3aed;
+}
+
+/* ✨ Focus animation */
+.donate input:focus {
+  border-color: transparent;
+  background: linear-gradient(180deg, #ffffff, #f0f7ff);
+  box-shadow: 0 0 0 3px rgba(11, 92, 255, 0.25),
+              0 0 20px rgba(124, 58, 237, 0.15);
+  transform: scale(1.02);
+}
+
+/* 🎞️ Subtle entry animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.donate input {
+  animation: fadeSlide 0.6s ease forwards;
+}
+.donate input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 14px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255),
+    rgb(245, 248, 255)
+  );
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(15, 23, 42);
+  outline: none;
+  transition: all 0.35s ease;
+  animation: fadeSlide 0.7s ease forwards;
+}
+
+/* 🌈 Hover Effect (Soft glow + gradient border) */
+.donate input:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(
+    180deg,
+    rgb(250, 252, 255),
+    rgb(240, 247, 255)
+  );
+  border-color: rgb(56, 189, 248);
+  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.3);
+}
+
+/* ✨ Focus Effect (blue-purple glow ring) */
+.donate input:focus {
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255),
+    rgb(230, 240, 255)
+  );
+  border: 2px solid transparent;
+  box-shadow:
+    0 0 0 3px rgba(56, 189, 248, 0.35),
+    0 0 10px rgba(147, 51, 234, 0.25),
+    0 0 30px rgba(59, 130, 246, 0.15);
+  transform: scale(1.03);
+}
+
+/* 🎞️ Entry animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.donate {
+  background: linear-gradient(
+    120deg,
+    rgb(236, 253, 245),
+    rgb(224, 242, 254),
+    rgb(240, 249, 255)
+  );
+  padding: 50px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  animation: softGlow 8s ease-in-out infinite alternate;
+}
+
+@keyframes softGlow {
+  0% {
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 45px rgba(147, 51, 234, 0.3);
+  }
+}
+/* 🩵 Donate Container */
+.donate {
+  background: linear-gradient(
+    135deg,
+    rgb(236, 253, 245),
+    rgb(224, 242, 254),
+    rgb(240, 249, 255)
+  );
+  padding: 60px 30px;
+  border-radius: 22px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  animation: softGlow 10s ease-in-out infinite alternate;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+/* 🌈 Animated border glow sweep */
+.donate::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  padding: 2px;
+  background: linear-gradient(
+    120deg,
+    rgb(56, 189, 248),
+    rgb(147, 51, 234),
+    rgb(16, 185, 129),
+    rgb(56, 189, 248)
+  );
+  background-size: 300% 300%;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: borderFlow 6s linear infinite;
+}
+
+/* 🩵 Input Style */
+.donate input {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 14px 16px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255),
+    rgb(245, 248, 255)
+  );
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(15, 23, 42);
+  outline: none;
+  transition: all 0.35s ease;
+  animation: fadeSlide 0.8s ease forwards;
+}
+
+/* 🌟 Hover */
+.donate input:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(
+    180deg,
+    rgb(250, 252, 255),
+    rgb(235, 243, 255)
+  );
+  border-color: rgb(56, 189, 248);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.25);
+}
+
+/* ✨ Focus */
+.donate input:focus {
+  background: linear-gradient(
+    180deg,
+    rgb(255, 255, 255),
+    rgb(235, 240, 255)
+  );
+  border: 2px solid transparent;
+  box-shadow:
+    0 0 0 4px rgba(56, 189, 248, 0.35),
+    0 0 25px rgba(147, 51, 234, 0.25),
+    0 0 35px rgba(59, 130, 246, 0.2);
+  transform: scale(1.03);
+}
+
+/* 💸 Donate Button */
+.donate button {
+  background: linear-gradient(90deg, rgb(59, 130, 246), rgb(147, 51, 234));
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+  transition: all 0.35s ease;
+  margin-top: 10px;
+}
+
+.donate button:hover {
+  transform: translateY(-3px) scale(1.05);
+  background: linear-gradient(90deg, rgb(56, 189, 248), rgb(147, 51, 234));
+  box-shadow: 0 10px 30px rgba(147, 51, 234, 0.4);
+}
+
+/* 🌤️ Animations */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes borderFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes softGlow {
+  0% {
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 50px rgba(147, 51, 234, 0.3);
+  }
+}
